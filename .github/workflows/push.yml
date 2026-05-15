@@ -5,7 +5,7 @@ name: first practice
 on:
     push:
         branches:
-            -main
+            - main
 
 
 jobs:
