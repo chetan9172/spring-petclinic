@@ -1,0 +1,16 @@
+---
+
+name: first practice
+
+on:
+    push:
+        branches:
+            -main
+
+
+jobs:
+    print-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: printing something
+              run: echo "hello github actions"
