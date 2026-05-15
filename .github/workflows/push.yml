@@ -14,3 +14,15 @@ jobs:
         steps:
             - name: printing something
               run: echo "hello github actions"
+    
+    spring-pet-clinic:
+        runs-on: ubuntu-latest
+        steps:
+             - name: code checkpot
+               uses: actions/checkout@v6
+             - name: code compile
+               run: mvn compile
+             - name: code test
+               run: mvn test
+             - name: code packaging
+              run: mvn package
